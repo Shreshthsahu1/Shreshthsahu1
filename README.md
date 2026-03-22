@@ -45,7 +45,7 @@ I'm currently pursuing my **Bachelor's in Computer Science and Engineering** at 
 
 ## 🚀 Featured Projects
 
-### 📅 **Doctor Appointment Management System**
+### 📅 **Hospital Management System (HMS)**
 **Duration:** February 2026 - March 2026 | **Status:** In Progress
 
 A comprehensive management system designed to simulate appointment scheduling and workflow optimization.
