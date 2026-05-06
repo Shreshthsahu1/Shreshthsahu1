@@ -1,4 +1,4 @@
-# 👋 Hi, I'm Shreshth Sahu
+<img width="192" height="186" alt="image" src="https://github.com/user-attachments/assets/141956fd-2ed2-423f-b25b-359bade2a146" /># 👋 Hi, I'm Shreshth Sahu
 
 **Data Scientist | Python Developer | AI/ML Enthusiast**
 
@@ -14,6 +14,7 @@ I'm currently pursuing my **Bachelor's in Computer Science and Engineering** at 
 - 📧 **Email:** shreshthsahu1111@gmail.com
 - 📱 **Phone:** +91-7223810226
 - 🔗 **LinkedIn:** [linkedin.com/in/shreshth-sahu](https://linkedin.com/in/shreshth-sahu/)
+- 🖇️ **Instagram:** [instagram.com/shreshth_sahu1](https://www.instagram.com/shreshth_sahu1/)
 
 ---
 
