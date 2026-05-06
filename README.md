@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="shreshth_sahu_animated_logo (1).html" width="220" height="220" alt="Shreshth Sahu Logo"/>
+  <img src="shreshth_sahu_logo.svg" width="400" height="400" alt="Shreshth Sahu Logo"/>
 </div>
 
 <br/>
