@@ -1,6 +1,9 @@
 <div align="center">
-  <img src="shreshth_sahu_logo.svg" width="200" height="200" alt="Shreshth Sahu Logo"/>
+  <img src="shreshth_sahu_logo.svg" width="220" height="220" alt="Shreshth Sahu Logo"/>
 </div>
+
+<br/>
+
 # 👋 Hi, I'm Shreshth Sahu
 
 **Data Scientist | Python Developer | AI/ML Enthusiast**
