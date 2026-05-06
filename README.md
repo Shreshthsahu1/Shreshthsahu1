@@ -1,3 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Shreshth Sahu — Animated Logo</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #020810;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  .card {
+    width: 420px;
+    height: 480px;
+    background: #050d1a;
+    border-radius: 24px;
+    border: 1px solid rgba(0,245,255,0.3);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  canvas.grid {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+  }
+  .content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  svg.logo { width: 220px; height: 220px; overflow: visible; }
+  .name-wrap { margin-top: 18px; text-align: center; }
+  .name1 {
+    font-family: 'Arial Black', Arial, sans-serif;
+    font-size: 26px;
+    font-weight: 900;
+    letter-spacing: 6px;
+    background: linear-gradient(90deg, #00f5ff 0%, #ffffff 45%, #bf5af2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 3s linear infinite;
+    background-size: 200% auto;
+  }
+  .divider {
+    width: 280px; height: 1.5px;
+    background: linear-gradient(90deg, #00f5ff, #bf5af2);
+    margin: 6px auto;
+    animation: expandW 1.2s ease forwards;
+    transform-origin: center;
+  }
+  .name2 {
+    font-family: Arial, sans-serif;
+    font-size: 17px; font-weight: 300;
+    letter-spacing: 10px;
+    color: rgba(255,255,255,0.88);
+    animation: fadeUp 1.5s ease forwards;
+  }
+  .tag {
+    margin-top: 14px;
+    background: #07182e;
+    border: 0.75px solid rgba(0,245,255,0.5);
+    border-radius: 8px;
+    padding: 6px 20px;
+    font-family: 'Courier New', monospace;
+    font-size: 12px; color: #00f5ff; letter-spacing: 1px;
+    animation: pulse 2.5s ease-in-out infinite;
+  }
+  .binary {
+    margin-top: 10px;
+    font-family: 'Courier New', monospace;
+    font-size: 9px; color: rgba(0,128,255,0.35);
+    letter-spacing: 2px;
+    animation: flicker 4s step-start infinite;
+  }
+  .corner { position: absolute; width: 18px; height: 18px; }
+  .corner svg { width: 18px; height: 18px; }
+  .corner.tl { top: 14px; left: 14px; }
+  .corner.tr { top: 14px; right: 14px; transform: scaleX(-1); }
+  .corner.bl { bottom: 14px; left: 14px; transform: scaleY(-1); }
+  .corner.br { bottom: 14px; right: 14px; transform: scale(-1,-1); }
+  .idbadge {
+    position: absolute; top: 18px; right: 42px;
+    background: rgba(0,245,255,0.08);
+    border-radius: 10px; padding: 3px 12px;
+    font-family: 'Courier New', monospace;
+    font-size: 9px; color: rgba(0,245,255,0.7); letter-spacing: 1px;
+    animation: blink 2s step-start infinite;
+  }
+  .ver {
+    position: absolute; bottom: 18px; left: 22px;
+    font-family: 'Courier New', monospace;
+    font-size: 9px; color: rgba(191,90,242,0.5);
+  }
+
+  @keyframes shimmer {
+    0%   { background-position: 200% center; }
+    100% { background-position: -200% center; }
+  }
+  @keyframes expandW {
+    from { transform: scaleX(0); }
+    to   { transform: scaleX(1); }
+  }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes pulse {
+    0%,100% { box-shadow: 0 0 0 0 rgba(0,245,255,0); }
+    50%      { box-shadow: 0 0 10px 2px rgba(0,245,255,0.18); }
+  }
+  @keyframes flicker {
+    0%,95%,100% { opacity: 0.35; }
+    96% { opacity: 0.9; } 97% { opacity: 0.2; } 98% { opacity: 0.8; }
+  }
+  @keyframes blink {
+    0%,90%,100% { opacity: 1; } 92% { opacity: 0.2; } 94% { opacity: 1; }
+  }
+  .trace-top   { stroke-dasharray: 130; stroke-dashoffset: 130; animation: drawLine 1.2s ease forwards 0.2s; }
+  .trace-right { stroke-dasharray: 58;  stroke-dashoffset: 58;  animation: drawLine 0.8s ease forwards 0.9s; }
+  .trace-mid   { stroke-dasharray: 150; stroke-dashoffset: 150; animation: drawLine 1s ease forwards 1.4s; }
+  .trace-left  { stroke-dasharray: 55;  stroke-dashoffset: 55;  animation: drawLine 0.8s ease forwards 1.8s; }
+  .trace-bot   { stroke-dasharray: 130; stroke-dashoffset: 130; animation: drawLine 1s ease forwards 2.2s; }
+  .ext-tr { stroke-dasharray: 80; stroke-dashoffset: 80; animation: drawLine 0.7s ease forwards 1.4s; }
+  .ext-tl { stroke-dasharray: 60; stroke-dashoffset: 60; animation: drawLine 0.7s ease forwards 1.6s; }
+  .ext-br { stroke-dasharray: 80; stroke-dashoffset: 80; animation: drawLine 0.7s ease forwards 2.6s; }
+  .ext-bl { stroke-dasharray: 80; stroke-dashoffset: 80; animation: drawLine 0.7s ease forwards 2.8s; }
+  @keyframes drawLine { to { stroke-dashoffset: 0; } }
+
+  .node { opacity: 0; animation: popIn 0.3s ease forwards; }
+  .n1 { animation-delay: 0.3s; } .n2 { animation-delay: 1.0s; }
+  .n3 { animation-delay: 1.5s; } .n4 { animation-delay: 1.6s; }
+  .n5 { animation-delay: 2.0s; } .n6 { animation-delay: 2.3s; }
+  .n7 { animation-delay: 2.5s; }
+
+  .dot-r1 { animation: dotPulse 2.4s ease-in-out infinite 2.0s; }
+  .dot-r2 { animation: dotPulse 2.4s ease-in-out infinite 2.2s; }
+  .dot-r3 { animation: dotPulse 2.4s ease-in-out infinite 2.4s; }
+  .dot-l1 { animation: dotPulse 2.4s ease-in-out infinite 2.1s; }
+  .dot-l2 { animation: dotPulse 2.4s ease-in-out infinite 2.3s; }
+  .dot-l3 { animation: dotPulse 2.4s ease-in-out infinite 2.5s; }
+  .dot-p1 { animation: dotPulse 2.8s ease-in-out infinite 2.4s; }
+  .dot-p2 { animation: dotPulse 2.8s ease-in-out infinite 2.7s; }
+  .dot-p3 { animation: dotPulse 2.8s ease-in-out infinite 3.0s; }
+  .dot-q1 { animation: dotPulse 2.8s ease-in-out infinite 2.5s; }
+  .dot-q2 { animation: dotPulse 2.8s ease-in-out infinite 2.8s; }
+  .dot-q3 { animation: dotPulse 2.8s ease-in-out infinite 3.1s; }
+
+  @keyframes popIn {
+    from { opacity: 0; transform: scale(0); }
+    to   { opacity: 1; transform: scale(1); }
+  }
+  @keyframes dotPulse {
+    0%,100% { opacity: 0.7; } 50% { opacity: 0.12; }
+  }
+  .scan { animation: scanMove 3s linear infinite 2s; opacity: 0; }
+  @keyframes scanMove {
+    0%   { transform: translateY(-80px); opacity: 0.18; }
+    80%  { opacity: 0.18; }
+    100% { transform: translateY(80px); opacity: 0; }
+  }
+  .frame-glow { animation: frameGlow 3s ease-in-out infinite; }
+  @keyframes frameGlow {
+    0%,100% { stroke: rgba(0,245,255,0.3); }
+    50%     { stroke: rgba(0,245,255,0.65); }
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <canvas class="grid" id="gridCanvas"></canvas>
+
+  <div class="corner tl"><svg viewBox="0 0 18 18"><polyline points="2,16 2,2 16,2" fill="none" stroke="#00f5ff" stroke-width="1.5" opacity="0.6"/></svg></div>
+  <div class="corner tr"><svg viewBox="0 0 18 18"><polyline points="2,16 2,2 16,2" fill="none" stroke="#00f5ff" stroke-width="1.5" opacity="0.6"/></svg></div>
+  <div class="corner bl"><svg viewBox="0 0 18 18"><polyline points="2,16 2,2 16,2" fill="none" stroke="#00f5ff" stroke-width="1.5" opacity="0.6"/></svg></div>
+  <div class="corner br"><svg viewBox="0 0 18 18"><polyline points="2,16 2,2 16,2" fill="none" stroke="#00f5ff" stroke-width="1.5" opacity="0.6"/></svg></div>
+
+  <div class="idbadge">ID::SS_2025</div>
+  <div class="ver">v1.0.0</div>
+
+  <div class="content">
+    <svg class="logo" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="gc" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#00f5ff"/>
+          <stop offset="100%" stop-color="#0080ff"/>
+        </linearGradient>
+        <linearGradient id="gp" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#bf5af2"/>
+          <stop offset="100%" stop-color="#6e40c9"/>
+        </linearGradient>
+      </defs>
+
+      <rect x="18" y="8" width="184" height="204" rx="12" fill="#07182e" stroke="#00f5ff" stroke-width="0.8" opacity="0.5"/>
+      <rect class="scan" x="18" y="105" width="184" height="2" rx="1" fill="#00f5ff"/>
+
+      <rect class="trace-top"   x="38"  y="28"  width="120" height="22" rx="4" fill="url(#gc)"/>
+      <rect class="trace-right" x="136" y="28"  width="22"  height="56" rx="4" fill="url(#gc)" opacity="0.75"/>
+      <rect class="trace-mid"   x="28"  y="109" width="144" height="22" rx="4" fill="url(#gc)"/>
+      <rect class="trace-left"  x="28"  y="131" width="22"  height="52" rx="4" fill="url(#gp)" opacity="0.8"/>
+      <rect class="trace-bot"   x="28"  y="162" width="120" height="22" rx="4" fill="url(#gp)"/>
+
+      <circle class="node n1" cx="40"  cy="39"  r="5" fill="#050d1a" stroke="#00f5ff" stroke-width="1.5"/>
+      <circle class="node n2" cx="158" cy="39"  r="5" fill="#050d1a" stroke="#00f5ff" stroke-width="1.5"/>
+      <circle class="node n3" cx="158" cy="84"  r="5" fill="#050d1a" stroke="#00f5ff" stroke-width="1.5"/>
+      <circle class="node n4" cx="40"  cy="120" r="5" fill="#050d1a" stroke="#00f5ff" stroke-width="1.5"/>
+      <circle class="node n5" cx="172" cy="120" r="5" fill="#050d1a" stroke="#bf5af2" stroke-width="1.5"/>
+      <circle class="node n6" cx="40"  cy="173" r="5" fill="#050d1a" stroke="#bf5af2" stroke-width="1.5"/>
+      <circle class="node n7" cx="148" cy="173" r="5" fill="#050d1a" stroke="#bf5af2" stroke-width="1.5"/>
+
+      <polyline class="ext-tr" points="158,39 192,39 192,8"   fill="none" stroke="#00f5ff" stroke-width="1" stroke-dasharray="4 3" opacity="0.55"/>
+      <circle cx="192" cy="8"   r="3" fill="#00f5ff" opacity="0.7"/>
+      <polyline class="ext-tl" points="40,28 18,28 18,8"     fill="none" stroke="#00f5ff" stroke-width="1" stroke-dasharray="4 3" opacity="0.55"/>
+      <circle cx="18"  cy="8"   r="3" fill="#00f5ff" opacity="0.7"/>
+      <polyline class="ext-br" points="148,184 148,212 18,212" fill="none" stroke="#bf5af2" stroke-width="1" stroke-dasharray="4 3" opacity="0.55"/>
+      <circle cx="18"  cy="212" r="3" fill="#bf5af2" opacity="0.7"/>
+      <polyline class="ext-bl" points="172,120 196,120 196,212" fill="none" stroke="#bf5af2" stroke-width="1" stroke-dasharray="4 3" opacity="0.55"/>
+      <circle cx="196" cy="212" r="3" fill="#bf5af2" opacity="0.7"/>
+
+      <circle class="dot-r1" cx="200" cy="55"  r="3"   fill="#00f5ff"/>
+      <circle class="dot-r2" cx="210" cy="72"  r="2.5" fill="#00f5ff" opacity="0.5"/>
+      <circle class="dot-r3" cx="215" cy="90"  r="2"   fill="#00f5ff" opacity="0.25"/>
+      <circle class="dot-p1" cx="200" cy="138" r="3"   fill="#bf5af2"/>
+      <circle class="dot-p2" cx="210" cy="155" r="2.5" fill="#bf5af2" opacity="0.5"/>
+      <circle class="dot-p3" cx="215" cy="172" r="2"   fill="#bf5af2" opacity="0.25"/>
+      <circle class="dot-l1" cx="10"  cy="55"  r="3"   fill="#00f5ff"/>
+      <circle class="dot-l2" cx="4"   cy="72"  r="2.5" fill="#00f5ff" opacity="0.5"/>
+      <circle class="dot-l3" cx="1"   cy="90"  r="2"   fill="#00f5ff" opacity="0.25"/>
+      <circle class="dot-q1" cx="10"  cy="138" r="3"   fill="#bf5af2"/>
+      <circle class="dot-q2" cx="4"   cy="155" r="2.5" fill="#bf5af2" opacity="0.5"/>
+      <circle class="dot-q3" cx="1"   cy="172" r="2"   fill="#bf5af2" opacity="0.25"/>
+    </svg>
+
+    <div class="name-wrap">
+      <div class="name1">SHRESHTH</div>
+      <div class="divider"></div>
+      <div class="name2">SAHU</div>
+    </div>
+    <div class="tag">&lt;cs.student /&gt;</div>
+    <div class="binary">0101 1010 · SS · 0110 1000</div>
+  </div>
+
+  <svg class="frame-glow" style="position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;" viewBox="0 0 420 480" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0.5" y="0.5" width="419" height="479" rx="23.5" fill="none" stroke-width="1"/>
+  </svg>
+</div>
+
+<script>
+const canvas = document.getElementById('gridCanvas');
+const ctx = canvas.getContext('2d');
+const card = canvas.parentElement;
+
+function resize() {
+  canvas.width = card.offsetWidth;
+  canvas.height = card.offsetHeight;
+}
+
+function drawGrid() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.strokeStyle = 'rgba(0,245,255,0.045)';
+  ctx.lineWidth = 0.5;
+  const step = 40;
+  for (let x = 0; x < canvas.width; x += step) {
+    ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, canvas.height); ctx.stroke();
+  }
+  for (let y = 0; y < canvas.height; y += step) {
+    ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(canvas.width, y); ctx.stroke();
+  }
+}
+
+resize();
+
+let particles = [];
+
+function spawnParticle() {
+  const cyan = Math.random() > 0.5;
+  particles.push({
+    x: Math.random() * canvas.width,
+    y: Math.random() * canvas.height,
+    r: Math.random() * 1.5 + 0.5,
+    alpha: Math.random() * 0.4 + 0.1,
+    color: cyan ? '0,245,255' : '191,90,242',
+    life: 0,
+    maxLife: 60 + Math.random() * 80
+  });
+}
+
+function animate() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  drawGrid();
+  if (Math.random() < 0.15) spawnParticle();
+  particles = particles.filter(p => p.life < p.maxLife);
+  for (const p of particles) {
+    p.life++;
+    const a = p.alpha * Math.sin((p.life / p.maxLife) * Math.PI);
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(${p.color},${a})`;
+    ctx.fill();
+  }
+  requestAnimationFrame(animate);
+}
+
+animate();
+</script>
+</body>
+</html>
 # 👋 Hi, I'm Shreshth Sahu
 
 **Data Scientist | Python Developer | AI/ML Enthusiast**
