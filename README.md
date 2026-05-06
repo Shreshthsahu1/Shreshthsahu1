@@ -1,4 +1,4 @@
-<img width="192" height="186" alt="image" src="https://github.com/user-attachments/assets/141956fd-2ed2-423f-b25b-359bade2a146" /># 👋 Hi, I'm Shreshth Sahu
+# 👋 Hi, I'm Shreshth Sahu
 
 **Data Scientist | Python Developer | AI/ML Enthusiast**
 
