@@ -1,0 +1,127 @@
+<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f5ff"/>
+      <stop offset="100%" stop-color="#0080ff"/>
+    </linearGradient>
+    <linearGradient id="cyanH" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f5ff"/>
+      <stop offset="100%" stop-color="#0080ff"/>
+    </linearGradient>
+    <linearGradient id="nameFill" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f5ff"/>
+      <stop offset="40%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#bf5af2"/>
+    </linearGradient>
+    <clipPath id="cardClip">
+      <rect x="0" y="0" width="500" height="500" rx="24"/>
+    </clipPath>
+  </defs>
+
+  <!-- Card background -->
+  <rect x="0" y="0" width="500" height="500" rx="24" fill="#050d1a"/>
+  <rect x="0" y="0" width="500" height="500" rx="24" fill="none" stroke="#00f5ff" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Grid lines -->
+  <g clip-path="url(#cardClip)" opacity="0.05" stroke="#00f5ff" stroke-width="0.5">
+    <line x1="0" y1="50" x2="500" y2="50"/>
+    <line x1="0" y1="100" x2="500" y2="100"/>
+    <line x1="0" y1="150" x2="500" y2="150"/>
+    <line x1="0" y1="200" x2="500" y2="200"/>
+    <line x1="0" y1="250" x2="500" y2="250"/>
+    <line x1="0" y1="300" x2="500" y2="300"/>
+    <line x1="0" y1="350" x2="500" y2="350"/>
+    <line x1="0" y1="400" x2="500" y2="400"/>
+    <line x1="0" y1="450" x2="500" y2="450"/>
+    <line x1="50" y1="0" x2="50" y2="500"/>
+    <line x1="100" y1="0" x2="100" y2="500"/>
+    <line x1="150" y1="0" x2="150" y2="500"/>
+    <line x1="200" y1="0" x2="200" y2="500"/>
+    <line x1="250" y1="0" x2="250" y2="500"/>
+    <line x1="300" y1="0" x2="300" y2="500"/>
+    <line x1="350" y1="0" x2="350" y2="500"/>
+    <line x1="400" y1="0" x2="400" y2="500"/>
+    <line x1="450" y1="0" x2="450" y2="500"/>
+  </g>
+
+  <!-- Circuit S frame -->
+  <rect x="148" y="60" width="204" height="210" rx="12" fill="#07182e" stroke="#00f5ff" stroke-width="1" opacity="0.6"/>
+
+  <!-- Top bar of S -->
+  <rect x="168" y="80" width="130" height="24" rx="4" fill="url(#cyan)"/>
+  <!-- Top-right vertical -->
+  <rect x="276" y="80" width="24" height="58" rx="4" fill="url(#cyan)" opacity="0.75"/>
+  <!-- Middle bar -->
+  <rect x="158" y="167" width="150" height="24" rx="4" fill="url(#cyan)"/>
+  <!-- Bottom-left vertical -->
+  <rect x="148" y="191" width="24" height="55" rx="4" fill="url(#cyan)" opacity="0.75"/>
+  <!-- Bottom bar -->
+  <rect x="148" y="224" width="130" height="24" rx="4" fill="url(#cyan)"/>
+
+  <!-- Node dots -->
+  <circle cx="170" cy="92" r="5.5" fill="#050d1a" stroke="#00f5ff" stroke-width="1.5"/>
+  <circle cx="298" cy="92" r="5.5" fill="#050d1a" stroke="#00f5ff" stroke-width="1.5"/>
+  <circle cx="298" cy="138" r="5.5" fill="#050d1a" stroke="#00f5ff" stroke-width="1.5"/>
+  <circle cx="170" cy="179" r="5.5" fill="#050d1a" stroke="#00f5ff" stroke-width="1.5"/>
+  <circle cx="308" cy="179" r="5.5" fill="#050d1a" stroke="#bf5af2" stroke-width="1.5"/>
+  <circle cx="172" cy="236" r="5.5" fill="#050d1a" stroke="#bf5af2" stroke-width="1.5"/>
+  <circle cx="278" cy="236" r="5.5" fill="#050d1a" stroke="#bf5af2" stroke-width="1.5"/>
+
+  <!-- Circuit traces -->
+  <polyline points="298,92 340,92 340,60" fill="none" stroke="#00f5ff" stroke-width="1" stroke-dasharray="4 3" opacity="0.55"/>
+  <circle cx="340" cy="60" r="3.5" fill="#00f5ff" opacity="0.7"/>
+
+  <polyline points="170,80 148,80 148,60" fill="none" stroke="#00f5ff" stroke-width="1" stroke-dasharray="4 3" opacity="0.55"/>
+  <circle cx="148" cy="60" r="3.5" fill="#00f5ff" opacity="0.7"/>
+
+  <polyline points="278,248 278,270 148,270" fill="none" stroke="#bf5af2" stroke-width="1" stroke-dasharray="4 3" opacity="0.55"/>
+  <circle cx="148" cy="270" r="3.5" fill="#bf5af2" opacity="0.7"/>
+
+  <polyline points="308,179 340,179 340,270" fill="none" stroke="#bf5af2" stroke-width="1" stroke-dasharray="4 3" opacity="0.55"/>
+  <circle cx="340" cy="270" r="3.5" fill="#bf5af2" opacity="0.7"/>
+
+  <!-- Data stream right -->
+  <circle cx="370" cy="110" r="3" fill="#00f5ff" opacity="0.7"/>
+  <circle cx="382" cy="130" r="2.5" fill="#00f5ff" opacity="0.45"/>
+  <circle cx="390" cy="150" r="2" fill="#00f5ff" opacity="0.25"/>
+  <circle cx="370" cy="200" r="3" fill="#bf5af2" opacity="0.7"/>
+  <circle cx="382" cy="220" r="2.5" fill="#bf5af2" opacity="0.45"/>
+  <circle cx="390" cy="240" r="2" fill="#bf5af2" opacity="0.25"/>
+
+  <!-- Data stream left -->
+  <circle cx="128" cy="110" r="3" fill="#00f5ff" opacity="0.7"/>
+  <circle cx="116" cy="130" r="2.5" fill="#00f5ff" opacity="0.45"/>
+  <circle cx="108" cy="150" r="2" fill="#00f5ff" opacity="0.25"/>
+  <circle cx="128" cy="200" r="3" fill="#bf5af2" opacity="0.7"/>
+  <circle cx="116" cy="220" r="2.5" fill="#bf5af2" opacity="0.45"/>
+  <circle cx="108" cy="240" r="2" fill="#bf5af2" opacity="0.25"/>
+
+  <!-- Name -->
+  <text x="250" y="335" font-family="Arial Black, Arial, sans-serif" font-size="30" font-weight="900" fill="url(#nameFill)" text-anchor="middle" letter-spacing="5">SHRESHTH</text>
+
+  <rect x="80" y="346" width="340" height="1.5" rx="0.75" fill="url(#cyanH)" opacity="0.5"/>
+
+  <text x="250" y="376" font-family="Arial, sans-serif" font-size="19" font-weight="300" fill="#ffffff" text-anchor="middle" letter-spacing="10" opacity="0.9">SAHU</text>
+
+  <!-- Tag -->
+  <rect x="160" y="396" width="180" height="28" rx="7" fill="#07182e" stroke="#00f5ff" stroke-width="0.75" opacity="0.9"/>
+  <text x="250" y="415" font-family="Courier New, monospace" font-size="12" fill="#00f5ff" text-anchor="middle" letter-spacing="1">&lt;cs.student /&gt;</text>
+
+  <!-- Binary strip -->
+  <text x="250" y="450" font-family="Courier New, monospace" font-size="9" fill="#0080ff" text-anchor="middle" opacity="0.3" letter-spacing="2">0101 1010 · SS · 0110 1000</text>
+
+  <!-- Corner brackets -->
+  <g stroke="#00f5ff" stroke-width="1.5" fill="none" opacity="0.5">
+    <polyline points="14,24 14,14 24,14"/>
+    <polyline points="476,14 486,14 486,24"/>
+    <polyline points="14,476 14,486 24,486"/>
+    <polyline points="476,486 486,486 486,476"/>
+  </g>
+
+  <!-- ID badge -->
+  <rect x="370" y="18" width="108" height="20" rx="10" fill="#00f5ff" opacity="0.1"/>
+  <text x="424" y="32" font-family="Courier New, monospace" font-size="10" fill="#00f5ff" text-anchor="middle" opacity="0.75">ID::SS_2025</text>
+
+  <!-- Version -->
+  <text x="20" y="482" font-family="Courier New, monospace" font-size="10" fill="#bf5af2" opacity="0.5">v1.0.0</text>
+</svg>
