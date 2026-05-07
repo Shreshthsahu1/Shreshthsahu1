@@ -1,5 +1,6 @@
-<img src="shreshth_sahu_logo_animated.svg" width="300" height="300" alt="Shreshth Sahu Logo"/>
-
+<div align="center">
+<img src="shreshth_sahu_logo_animated.svg" width="500" height="500" alt="Shreshth Sahu Logo"/>
+</div>
 <br/>
 
 # 👋 Hi, I'm Shreshth Sahu
