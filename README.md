@@ -1,6 +1,4 @@
-<div align="center">
-  <img src="shreshth_sahu_logo.svg" width="400" height="400" alt="Shreshth Sahu Logo"/>
-</div>
+<img src="shreshth_sahu_logo_animated.svg" width="300" height="300" alt="Shreshth Sahu Logo"/>
 
 <br/>
 
