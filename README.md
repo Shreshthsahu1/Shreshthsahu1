@@ -1,136 +1,130 @@
-<div align="center">
-<img src="shreshth_sahu_logo_animated.svg" width="500" height="500" alt="Shreshth Sahu Logo"/>
-</div>
-<br/>
+<div align="center"> <img src="shreshth_sahu_logo_animated.svg" width="500" height="500" alt="Shreshth Sahu Logo"/> </div> <br/>
 
 # 👋 Hi, I'm Shreshth Sahu
 
-**Data Scientist | Python Developer | AI/ML Enthusiast**
+### 🚀 Data Scientist | Machine Learning Engineer | Python Developer
 
-Welcome to my GitHub profile! I'm a passionate beginner Data Scientist with a strong foundation in Data Structures, Algorithms, and Machine Learning. I love building projects that combine coding, data analysis, and creative problem-solving.
-
----
-
-## 🎯 About Me
-
-I'm currently pursuing my **Bachelor's in Computer Science and Engineering** at Lovely Professional University (LPU). With hands-on experience in building full-stack applications and a growing expertise in machine learning, I'm committed to leveraging data-driven insights to solve real-world problems.
-
-- 📍 **Location:** Gwalior, M.P. | India
-- 📧 **Email:** shreshthsahu1111@gmail.com
-- 📱 **Phone:** +91-7223810226
-- 🔗 **LinkedIn:** [linkedin.com/in/shreshth-sahu](https://linkedin.com/in/shreshth-sahu/)
-- 🖇️ **Instagram:** [instagram.com/shreshth_sahu1](https://www.instagram.com/shreshth_sahu1/)
+I am a Computer Science undergraduate passionate about transforming raw data into meaningful insights through **Data Science, Machine Learning, Artificial Intelligence, and Analytics**. I enjoy solving real-world business problems using **Python, SQL, Power BI, and Machine Learning**.
 
 ---
 
-## 💻 Technical Skills
+## 🚀 About Me
 
-### **Languages**
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Java](https://img.shields.io/badge/Java-ED8936?style=for-the-badge&logo=java&logoColor=white)
-![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white)
+- 🎓 B.Tech in Computer Science Engineering – Lovely Professional University
+- 📊 Interested in Data Science, Machine Learning & AI
+- 💻 Strong foundation in Python, SQL, Data Structures & Algorithms
+- 📈 Building Business Analytics Dashboards using Power BI & Excel
+- 🤖 Exploring Generative AI, LLMs & Prompt Engineering
+- 🌱 Currently learning Advanced Machine Learning, Data Engineering & Cloud
+- 🎯 Goal: Become a Data Scientist at a Product-Based Company
 
-### **Frameworks & Libraries**
-- **Frontend:** HTML, CSS, JavaScript
-- **Backend:** Django, Node.js
-- **Data Science:** scikit-learn, OpenCV
-- **Visualization:** Power BI, MS Excel
+---
 
-### **Tools & Platforms**
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
-![Cisco Packet Tracer](https://img.shields.io/badge/Cisco-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white)
+## 🛠 Tech Stack
 
-### **Soft Skills**
-✨ Team Management | 🎯 Leadership | 🧩 Problem-Solving | 📚 Quick Learning | 🔄 Adaptability
+### Languages
+`Python` `SQL` `Java` `JavaScript` `C++` `C`
+
+### Data Science & ML
+`Pandas` `NumPy` `Matplotlib` `Scikit-Learn` `OpenCV`
+
+### Databases
+`MySQL`
+
+### Visualization
+`Power BI` `Microsoft Excel`
+
+### Web Development
+`HTML` `CSS` `JavaScript` `Django` `Node.js`
+
+### Tools
+`Git` `GitHub` `VS Code` `Cisco Packet Tracer`
+
+---
+
+## 📚 Currently Learning
+
+- Machine Learning
+- Deep Learning
+- Generative AI
+- Data Engineering
+- Oracle Cloud & Azure
+- Advanced SQL
+- Power BI (DAX)
+- Statistics for Data Science
 
 ---
 
 ## 🚀 Featured Projects
 
-### 📅 **Hospital Management System (HMS)**
-**Duration:** February 2026 - March 2026 | **Status:** In Progress
+### 🏥 Hospital Management System
+- Appointment scheduling & workflow optimization
+- Django backend with authentication
+- Database management & responsive UI
 
-A comprehensive management system designed to simulate appointment scheduling and workflow optimization.
+**Tech:** Python, Django, HTML, CSS
 
-- Built algorithmic logic for efficient appointment scheduling
-- Implemented robust data handling mechanisms
-- Designed and tested system modules for improved UX
-- **Tech Stack:** Python, Django, HTML, CSS
-- **Repository:** [View on GitHub](https://github.com/Shreshthsahu1/Doctor-Appointment-System)
+### 📊 Retail Sales Analytics
+- Revenue & customer trend analysis
+- Business insights dashboard
+- Data visualization with Python
 
-**Key Learnings:** Backend architecture, database design, system workflow optimization
+**Tech:** Python, Pandas, Matplotlib
 
----
+### 📈 HR Analytics Dashboard
+- Employee attrition analysis
+- Department & salary insights
+- KPI-based Power BI dashboard
 
-### 🍕 **Food Ordering Website**
-**Duration:** July 2024 - October 2024
+**Tech:** Power BI, Excel
 
-A fully responsive web application for food ordering with an interactive user interface.
+### 🚗 Car Sales Dashboard
+- Interactive sales dashboard
+- Pivot tables & business KPIs
+- Customer trend analysis
 
-- Developed responsive design for seamless cross-device experience
-- Implemented user-friendly order placement functionality
-- Created interactive food gallery with smooth navigation
-- Optimized UI/UX for enhanced user engagement
-- **Tech Stack:** HTML, CSS, JavaScript
-- **Repository:** [View on GitHub](https://github.com/Shreshthsahu1/Food-Ordering-Website)
+**Tech:** Excel
 
-**Key Features:** Responsive design, interactive gallery, order management system
+### 📱 AI Phone Detection System
+- Real-time webcam-based detection
+- OpenCV-powered monitoring system
 
----
-
-## 🎓 Education
-
-### **Bachelor of Technology - Computer Science & Engineering**
-**Lovely Professional University (LPU), Phagwara, Punjab**
-- **Duration:** August 2023 - Present
-- **CGPA:** 7.00/10
-
-### **Intermediate**
-**Ramshree India International School, Gwalior, M.P.**
-- **Duration:** April 2022 - March 2023
-- **Percentage:** 79%
-
-### **Matriculation**
-**Ramshree India International School, Gwalior, M.P.**
-- **Duration:** April 2020 - March 2021
-- **Percentage:** 94%
+**Tech:** Python, OpenCV
 
 ---
 
-## 🏆 Certifications & Training
+## 🏆 Certifications
 
-### **Professional Certifications**
-- 🤖 **ChatGPT Prompt Engineering: ChatGPT, Generative AI & LLM** | Infosys | December 2025
-- 🧠 **Introduction to Machine Learning** | NPTEL | October 2025
-- 💡 **Build Generative AI Apps and Solutions with No-Code Tools** | Infosys | August 2025
-- ☕ **Java Programming** | iamNeo, LPU | May 2025
-- 📊 **Python with Data Science Certification** | Board Infinity | February 2024
-
-### **Online Courses**
-- 🌐 **Fundamentals of Network Communication** | Coursera | September 2024
-- 💻 **Introduction to Hardware and Operating System** | IBM | September 2024
-- 🔗 **The Bits and Bytes of Computer Networking** | Google | September 2024
-- 📡 **Peer-to-Peer Protocols and Local Area Networking** | Coursera | September 2024
-
-### **Specialized Training**
-- 🎯 **Data Structures & Algorithms using Python** | CSE Pathshala | June - July 2025
-  - 35+ hours of intensive live training
-  - Implemented: Arrays, Linked Lists, Stacks, Queues, Trees
-  - Strong focus on problem-solving and algorithmic thinking
+- Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate
+- ChatGPT Prompt Engineering: Generative AI & LLM
+- Introduction to Machine Learning (NPTEL)
+- Build Generative AI Apps with No-Code Tools
+- Python with Data Science Certification
+- Java Programming Certification
 
 ---
 
-## 🌟 Extra-Curricular Activities
+## 📊 GitHub Analytics
 
-- 🤝 **Volunteer** - Pledge a Smile NGO
-- 🏅 **Active Participant** - Technical and Social Awareness Programs
-- 📱 **Social Media Marketing** - Digital Marketing Initiatives
-- 🎖️ **Certificates of Appreciation** - Community Engagement & Leadership
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Shreshthsahu1&show_icons=true&theme=tokyonight" />
+  <br/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Shreshthsahu1&theme=tokyonight" />
+</p>
 
 ---
 
-## 📊 GitHub Stats
+## 🤝 Connect With Me
+
+- 📧 Email: **shreshthsahu1111@gmail.com**
+- 💼 LinkedIn: **https://linkedin.com/in/shreshth-sahu**
+- 🌐 Portfolio: **https://shreshth-portfolio.vercel.app**
+- 🐙 GitHub: **https://github.com/Shreshthsahu1**
+
+---
+
+## 💡 Quote
+
+> "Turning Data into Decisions."
+
+⭐ If you like my work, consider following my GitHub profile and exploring my repositories!
