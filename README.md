@@ -2,13 +2,13 @@
 
 <h1 align="center"> 👋 Hi, I'm Shreshth Sahu
 
-##  🚀 Data Scientist | Machine Learning Engineer | Python Developer
+<h1 align="center">  🚀 Data Scientist | Machine Learning Engineer | Python Developer
 
 <p align="center">
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=1000&color=00F7FF&center=true&vCenter=true&width=800&lines=Data+Scientist;Software+Engineer;Python+Developer;React+Developer;FastAPI+Developer;Machine+Learning+Enthusiast;Open+Source+Learner" />
 </p>
 
-I am a Computer Science undergraduate passionate about transforming raw data into meaningful insights through **Data Science, Machine Learning, Artificial Intelligence, and Analytics**. I enjoy solving real-world business problems using **Python, SQL, Power BI, and Machine Learning**.
+<h2 align="center" >I am a Computer Science undergraduate passionate about transforming raw data into meaningful insights through **Data Science, Machine Learning, Artificial Intelligence, and Analytics**. I enjoy solving real-world business problems using **Python, SQL, Power BI, and Machine Learning**. </h2>
 
 ---
 
