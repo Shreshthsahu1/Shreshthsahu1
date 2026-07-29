@@ -8,7 +8,7 @@
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=1000&color=00F7FF&center=true&vCenter=true&width=900&lines=Data+Scientist;Software+Engineer;Python+Developer;React+Developer;FastAPI+Developer;Machine+Learning+Enthusiast;Open+Source+Learner" />
 </p>
 
-<h2 align="center" >I am a Computer Science undergraduate passionate about transforming raw data into meaningful insights through **Data Science, Machine Learning, Artificial Intelligence, and Analytics**. I enjoy solving real-world business problems using **Python, SQL, Power BI, and Machine Learning**. </h2>
+<h3 align="center" >I am a Computer Science undergraduate passionate about transforming raw data into meaningful insights through **Data Science, Machine Learning, Artificial Intelligence, and Analytics**. <br>I enjoy solving real-world business problems using **Python, SQL, Power BI, and Machine Learning**. </h3>
 
 ---
 
@@ -27,35 +27,40 @@
 ## 🛠 Tech Stack
 
 ### Languages
-`Python` `SQL` `Java` `JavaScript` `C++` `C`
+`Python` • `SQL` • `Java` • `JavaScript` • `C++` • `C`
 
 ### Data Science & ML
-`Pandas` `NumPy` `Matplotlib` `Scikit-Learn` `OpenCV`
+`Pandas` • `NumPy` • `Matplotlib` • `Scikit-Learn` • `OpenCV`
 
 ### Databases
-`MySQL`
+`MySQL` • `MongoDB`
 
 ### Visualization
-`Power BI` `Microsoft Excel`
+`Power BI` • `Microsoft Excel`
 
 ### Web Development
-`HTML` `CSS` `JavaScript` `Django` `Node.js`
+`HTML` • `CSS` • `JavaScript` • `Flask` • `FastAPI` • `React.js` • `Tailwind CSS`
+
+### APIs
+`REST API`
 
 ### Tools
-`Git` `GitHub` `VS Code` `Cisco Packet Tracer`
+`Git` • `GitHub` • `VS Code` • `Cisco Packet Tracer` • `Vercel` • `Jupyter Notebook`
+
 
 ---
 
 ## 📚 Currently Learning
 
-- Machine Learning
+- Data Engineering
 - Deep Learning
 - Generative AI
-- Data Engineering
+- Machine Learning
 - Oracle Cloud & Azure
-- Advanced SQL
-- Power BI (DAX)
-- Statistics for Data Science
+- NOSQL
+- React
+- FastAPI
+- System Design
 
 ---
 
