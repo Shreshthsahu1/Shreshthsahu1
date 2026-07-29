@@ -107,7 +107,7 @@ I am a Computer Science undergraduate passionate about transforming raw data int
 ## 📊 GitHub Analytics
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Shreshthsahu1" />
+  <img src="https://streak-stats.demolab.com?user=Shreshthsahu1&theme=tokyonight" alt="GitHub Streak" />
 </p>
 
 ---
